@@ -2,4 +2,32 @@ module.exports = {
     port: 3030,
     dbURI: "mongodb://localhost:27017/typescript_rest_api",
     saltWorkFactor: 10,
+    accessTokenTtl: '15m',
+    refreshTokenTtl: '1y',
+    publicKey: `-----BEGIN PUBLIC KEY-----
+MIGbMA0GCSqGSIb3DQEBAQUAA4GJADCBhQJ+ALquaLRWSfTcfwJO+7tm8J5fFH7G
+mBCHX6WIzRzQ8zxzB4CInNnRvFy9rPqKv3X0UAC5Y82sE92GfwX8LqWmGO8POiG4
+GvWAV/T2U1DKxbwTfwOQnJS1KM5HAVOGJNDPSb3Ys+l3knI+XOgW6fXxoByF9x13
+DKoXdTP2itszAgMBAAE=
+-----END PUBLIC KEY-----`,
+
+    privateKey: `-----BEGIN ENCRYPTED PRIVATE KEY-----
+MIICzTBXBgkqhkiG9w0BBQ0wSjApBgkqhkiG9w0BBQwwHAQIgIxDJNySptsCAggA
+MAwGCCqGSIb3DQIJBQAwHQYJYIZIAWUDBAEqBBB+ZwyzBtKVjDRUqQITf6geBIIC
+cGVcv74TCu85Srz0VQheHJuqUv9L9AK+1Z4nfF3FkufxDcbvThViMDkWuo/cbW1P
+aaDyLBwAgWTSX/G+SOv7ik6bfYAtKiHLo4ABC8S8+o4SyNnUXn+JOJqGjltPIYya
+i/EyG5A24BfdIDbq5XjvlBZ7zP6yE0Y39h75wLKXDdsodKaoUeLcPFpK8mwehcq9
+PkCaEWzJ/ERp81yZeT33nvLcKkc49MrU+dhnTwvJuGM8qI3HlW7+iOgU3Pu6yjFD
+jftXnoJjwHIS6Ohmhi/baO1H8oGQYXmBmqzvwsxPAaMggpWsxprGg1EoTuEsrieE
+vbRDpogS9EeLKFRvRrSk3De1zZBo1xnhZbOQi9dyKsUVZu6euHl33OUX8miZr/BM
+aufJgyinzVtbuenV7U3PFzAJpIHE02N4ChrN1LtibsvEl4M7ETEMLRfwloK6L6eu
+pQUyoT9HgY9wdNlQp1ulrhyp5oVpEBlk40cPuBQFuCtpZbk3jiplUQbqjW1OhOwc
+s6N4A2ocb+SlwBZ0tAqcpwoSBPsNgRWroOOj9DkjrJH0F6QFqMQpIZ7t3udSeFvh
+htKtinzHnvSVvpM628eNUWoJstiURsN2zZS5zdY+zz/DjgPQRUIXfguL8r3l8oY3
+y7obT1r+uP2xU6JdoyQv6Aa7OY5QSi3Yp7T5EV9EDzVrowK8t3vTob94ghiGwVsp
+b0OJn6yyGYxRGdgeYq01SCtNZBce6NU9+2ACt54inCW9myik9UEfqcNNk3aXzhQO
+E2HRSn/MD0eoHFvlWU5DkplkUC+m0M5DUyStRWsnhSVohOFhT+t3yv82eFrZLntr
+oQ==
+-----END ENCRYPTED PRIVATE KEY-----`
+
 }

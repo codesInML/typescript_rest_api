@@ -41,12 +41,12 @@ UserSchema.pre('save', async function (next) {
     return next()
 })
 
-UserSchema.methods.comparePasswords = async function (pwd): Promise<boolean> {
+UserSchema.methods.comparePasswords = async function (pwd: string): Promise<boolean> {
     let user = this as UserDocument
 
     return await bcrypt.compare(pwd, user.password)
 }
 
-const User = mongoose.model("User", UserSchema)
+const User = mongoose.model<UserDocument>("User", UserSchema)
 
 export default User
