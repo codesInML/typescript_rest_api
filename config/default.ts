@@ -2,7 +2,7 @@ module.exports = {
     port: 3030,
     dbURI: "mongodb://localhost:27017/typescript_rest_api",
     saltWorkFactor: 10,
-    accessTokenTtl: '15m',
+    accessTokenTtl: '1s',
     refreshTokenTtl: '1y',
     publicKey: `-----BEGIN PUBLIC KEY-----
 MIGbMA0GCSqGSIb3DQEBAQUAA4GJADCBhQJ+ALquaLRWSfTcfwJO+7tm8J5fFH7G
