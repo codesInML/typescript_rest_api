@@ -39,8 +39,8 @@ export async function getUserSessionHandler (req: Request, res: Response) {
     return res.status(200).json({msg: "success", sessions})
 }
 
-// export async function deleteSessionHandler (req: Request, res: Response) {
-//     const sessionId = res.locals.user.session
+export async function deleteSessionHandler (req: Request, res: Response) {
+    const sessionId = res.locals.user.session
 
-//     return res.status(200).json({accessToken: null, refreshToken: null})
-// }
+    return res.status(200).json({accessToken: null, refreshToken: null})
+}
